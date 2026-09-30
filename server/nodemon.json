@@ -1,0 +1,14 @@
+{
+  "verbose": false,
+  "ignore": ["client/", "node_modules/"],
+  "delay": 2500,
+  "execMap": {
+    "js": "node"
+  },
+  "events": {
+    "restart": "echo 'Restarting server...'"
+  },
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
