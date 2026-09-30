@@ -6,10 +6,9 @@ This is a web application that lets students create an account, log in, browse a
 
 ## How It's Built (Architecture)
 
-- 1. The Frontend is Built with plain HTML, CSS and JavaScript no frameworks. Pages like login, register, dashboard and profile are static HTML files and JavaScript files handle things like sending form data to the server and updating the page with the response.
-- 2. The Backend Built with Node.js and the Express framework. This is where all the real logic lives: checking if a login is correct, creating new student accounts, handling course enrollments and so on. The backend is organized into small, focused pieces routes decide which URL does what, controllers contain the actual logic and middleware handles crosscutting tasks like authentication and error handling. Keeping things separated this way makes the code easier to read, test and fix.
-
-- 3. The Database a MySQL relational database stores three main things: students, courses, and enrollments (which student is taking which course). These three tables are connected to each other so the system always knows exactly who's enrolled in what and it won't let the samestudent enroll in the same course twice.
+1. The Frontend is Built with plain HTML, CSS and JavaScript no frameworks. Pages like login, register, dashboard and profile are static HTML files and JavaScript files handle things like sending form data to the server and updating the page with the response.
+2. The Backend Built with Node.js and the Express framework. This is where all the real logic lives: checking if a login is correct, creating new student accounts, handling course enrollments and so on. The backend is organized into small, focused pieces routes decide which URL does what, controllers contain the actual logic and middleware handles crosscutting tasks like authentication and error handling. Keeping things separated this way makes the code easier to read, test and fix.
+3. The Database a MySQL relational database stores three main things: students, courses, and enrollments (which student is taking which course). These three tables are connected to each other so the system always knows exactly who's enrolled in what and it won't let the samestudent enroll in the same course twice.
 
 When a student uses the site, the frontend sends a request to the backend, the backend checks the database if needed and then sends a response back that the frontend displays. This requestresponse cycle happens every time a student logs in, views courses, enrolls or updates their profile.
 
