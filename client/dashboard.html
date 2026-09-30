@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <h2>Student Dashboard</h2>
+        <div>
+            <a href="enrolled.html">My Courses</a>
+            <a href="profile.html">Profile</a>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="course-container" id="courseContainer"></div>
+    </div>
+
+    <script src="./script/config.js"></script>
+    <script src="./script/api.js"></script>
+    <script src="./script/auth.js"></script>
+    <script>protectPage();</script>
+    <script src="./script/courses.js"></script>
+</body>
+
+</html>

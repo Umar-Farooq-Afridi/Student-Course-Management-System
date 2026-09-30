@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses</title>
+
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <h2>My Courses</h2>
+        <div>
+            <a href="dashboard.html">Dashboard</a>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="myCourses" class="course-container"></div>
+    </div>
+
+    <script src="./script/config.js"></script>
+    <script src="./script/api.js"></script>
+    <script src="./script/auth.js"></script>
+    <script>protectPage();</script>
+    <script src="./script/courses.js"></script>
+</body>
+
+</html>

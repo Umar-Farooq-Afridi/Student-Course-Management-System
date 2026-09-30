@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="home-card">
+            <h2>Student Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="loginEmail" placeholder="Enter email">
+                </div>
+
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter password">
+                </div>
+
+                <button class="btn" type="submit"> Login </button>
+            </form>
+
+            <p id="message"></p>
+
+            <br>
+            <a href="register.html"> Create New Account </a>
+        </div>
+    </div>
+
+    <script src="./script/config.js"></script>
+    <script src="./script/api.js"></script>
+    <script src="./script/validation.js"></script>
+    <script src="./script/auth.js"></script>
+</body>
+
+</html>
